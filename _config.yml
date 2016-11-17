@@ -48,7 +48,7 @@ paginate_path: "blog/:num/"
 
 # projects: true
 # about: true
-# blog: true
+blog: true
 
 read-time: true
 show-tags: true
