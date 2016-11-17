@@ -8,6 +8,8 @@ picture: https://avatars3.githubusercontent.com/u/754498?s=460
 
 url: https://edcs.me
 
+analytics-google: 'UA-28156787-1'
+
 permalink: /:title/
 
 markdown: kramdown
