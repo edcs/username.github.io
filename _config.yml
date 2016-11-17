@@ -1,0 +1,79 @@
+name: Edward Coleridge Smith
+bio: Independant Software Engineer
+
+description: A blog about technology and stuff related
+
+external-image: true
+picture: https://avatars3.githubusercontent.com/u/754498?s=460
+
+url: https://edcs.me
+
+permalink: /:title/
+
+markdown: kramdown
+highlighter: rouge
+
+disqus: false
+
+# facebook: myfacebook
+twitter: jedatron
+# google: mygoogle
+instagram: edcs
+# pinterest: mypinterest
+# linkedin: mylinkedin
+# youtube: myyoutube
+# spotify: myspotify
+github: edcs
+stackoverflow: 437704/edcs
+# quora: userquora
+# reddit: username
+# medium: medium
+# vimeo: myvimeo
+email: edcoleridgesmith@gmail.com
+
+authors:
+    edcs:
+        name: Edward Coleridge Smith
+        bio: Independant Software Engineer
+        external-image: true
+        picture: https://avatars3.githubusercontent.com/u/754498?s=460
+        twitter: jedatron
+
+width: normal
+
+paginate: 5
+paginate_path: "blog/:num/"
+
+# projects: true
+# about: true
+# blog: true
+
+read-time: true
+show-tags: true
+related: true
+blog-nav-links: false
+show-author: true
+animation: true
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+gems:
+  - jemoji
+  - jekyll-mentions
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-paginate
+
+exclude:
+  - .gitignore
+  - .nojeckyll.txt
+  - CNAME
+  - Gemfile
+  - package.json
+  - Rakefile
+  - README.md
+  - travis.sh
