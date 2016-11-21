@@ -88,19 +88,19 @@ easy to find since it's stored in a directory named `Homestead`. Now we need to 
 navigate to Languages & Frameworks :arrow_forward: PHP and select a new interpreter for our project by clicking the 
 ellipsis next to the current setting:
 
-[![PHP Language Settings](/assets/img/phpstorm-php-language-settings.png)](/assets/img/phpstorm-php-language-settings.png)
+[![PHP Language Settings](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-php-language-settings.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-php-language-settings.png)
 
 On the next window, we need to click on the '+' symbol in the top left corner to add the new interpreter, you should
 then select 'Remote' from the drop-down which appears:
 
-[![Add New PHP Interpreter](/assets/img/phpstorm-new-interpreter.png)](/assets/img/phpstorm-new-interpreter.png)
+[![Add New PHP Interpreter](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-new-interpreter.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-new-interpreter.png)
 
 Now another window will open, we need to select the 'Vagrant' option and paste in the Vagrant path which you obtained
 from the console earlier on. Then we can click OK (the PHP interpreter path is the default `/usr/bin/php` at the time of
 writing - if this changes in future, it can be obtained by running `php -i` on Homestead and looking for
 `$_SERVER['_']`):
 
-[![Vagrant Interpreter](/assets/img/phpstorm-vagrant-interpreter.png)](/assets/img/phpstorm-vagrant-interpreter.png)
+[![Vagrant Interpreter](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-vagrant-interpreter.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-vagrant-interpreter.png)
 
 ## Setting Up A Debug Session In Your Browser
 
@@ -120,7 +120,7 @@ If you choose to use Xdebug helper then you'll need to configure it with PhpStor
 make sure you go to it's [options](chrome-extension://eadndfjplgieldjbigjakmdgkmoaaaoc/options.html) and select PhpStorm
 under the IDE key section:
 
-[![Xdebug Helper IDE Key](/assets/img/xdebug-helper-ide-key.png)](/assets/img/xdebug-helper-ide-key.png)
+[![Xdebug Helper IDE Key](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/xdebug-helper-ide-key.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/xdebug-helper-ide-key.png)
 
 ## Finalising Your PhpStorm Configuration
 
@@ -128,7 +128,7 @@ Now we need to accept an incoming connection from Xdebug in PhpStorm, so enable 
 you're using Xdebug helper, click it's icon and select 'Debug') and refresh your page. A dialog box should open up in 
 PhpStorm which looks like this:
 
-[![PhpStorm Xdebug Incoming](/assets/img/phpstorm-xdebug-incoming.png)](/assets/img/phpstorm-xdebug-incoming.png)
+[![PhpStorm Xdebug Incoming](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-xdebug-incoming.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-xdebug-incoming.png)
 
 We need to configure PhpStorm so that it can match up the `index.php` file on Homestead with the local version on your 
 development machine. In the above example, `index.php` is located in in `public` so I'd select the matching local 
@@ -139,26 +139,26 @@ version from the list of possible matches file and click accept. Then that shoul
 For some reason, PhpStorm has a bit of difficulty matching local paths with the remote ones on Homestead. You'll
 probably see this error when you refresh the page after setting up the incoming Xdebug connection:
 
-[![PhpStorm Remote Path Error](/assets/img/phpstorm-path-mapping-error.png)](/assets/img/phpstorm-path-mapping-error.png)
+[![PhpStorm Remote Path Error](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-path-mapping-error.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-path-mapping-error.png)
 
 To fix this error, click on the `PHP|Servers` link on the error message, or go to Preferences :arrow_forward: PHP
 :arrow_forward: Servers and select the server which you defined earlier. You should now see a list of directories, the
 important one here is under 'Project files':
 
-[![PhpStorm Server Path](/assets/img/phpstorm-xdebug-server-before.png)](/assets/img/phpstorm-xdebug-server-before.png)
+[![PhpStorm Server Path](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-xdebug-server-before.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-xdebug-server-before.png)
 
 You'll see that the 'Absolute path on the server' is missing, this needs to be filled in with the full location of the
 corresponding path on Homestead. In this case, my project was located within the default `Code` directory on Homestead
 which resides in `/home/vagrant/` so the file mapping was `/home/vagrant/Code/[project-path]` which should be the
 general configuration for most Homestead users:
 
-[![PhpStorm Server Path](/assets/img/phpstorm-xdebug-server.png)](/assets/img/phpstorm-xdebug-server.png)
+[![PhpStorm Server Path](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-xdebug-server.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-xdebug-server.png)
 
 Once this setting has been added and saved, you should be able to add breakpoints in and debug your application. To give
 it a go, open up a file (I'm using `app/bootstrap/app.php`) and add a breakpoint, then refresh your page. This is what
 you should see:
 
-[![PhpStorm Server Path](/assets/img/phpstorm-xdebug-breakpoint.png)](/assets/img/phpstorm-xdebug-breakpoint.png)
+[![PhpStorm Server Path](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-xdebug-breakpoint.png)](/assets/img/setting-up-xdebug-with-phpstorm-and-laravel-homestead/phpstorm-xdebug-breakpoint.png)
 
 Now you should be ready to start debugging your PHP applications in a completely different way. Sure, dumping variables
 is a useful thing to do, but once you start getting into the habit of adding breakpoints in and viewing variable
