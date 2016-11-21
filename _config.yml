@@ -10,7 +10,7 @@ url: https://edcs.me
 
 analytics-google: 'UA-28156787-1'
 
-permalink: /:title/
+permalink: /blog/:title/
 
 markdown: kramdown
 highlighter: rouge
