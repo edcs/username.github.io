@@ -28,3 +28,11 @@ be stored in a multi-tenant environment. Or, you could be building an applicatio
 like to take advantage of the cost savings and reduction in complexity of shared infrastructure. In some circumstances you
 could even sit in the middle, storing multiple tenant's data sharded across multiple databases so that a tenant's data is
 not stored as a complete set in one location.
+
+# Multi-Tenancy In Laravel
+
+My experience with multi-tenant implementations has been exclusively with applications which use shared infrastructure. In a
+previous job, I was the lead developer at a company which made electric vehicle chargers. These chargers would be owned by a
+group (the tenant) who'd give access to their staff or customers (the users) via a mobile app. The mobile app would
+communicate with an API built with Laravel to issue commands to the chargers. The customer data was stored in a single Amazon
+RDS database and the database was structured in a way that customers could be queried by their group.
