@@ -68,6 +68,10 @@ see several Xdebug cofiguration values listed.
 
 ## Getting PhpStorm To Communicate With Xdebug
 
+**Update:** _If you're using IntelliJ instead of PhpStorm, it's been 
+[reported](https://github.com/edcs/edcs.github.io/issues/2) that you can still follow this tutorial, but
+you'll need to first install the "PHP Remote Interpreter" and "Vagrant" plugins before continuining._
+
 Now that Xdebug has been installed on your Homestead box, you can setup PhpStorm to communicate with it. First you'll
 need the Vagrant box directory that Homestead is using. You can get this by running the following command:
 
