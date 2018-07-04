@@ -10,7 +10,7 @@ tag:
 - vagrant
 blog: true
 author: edcs
-description: Handling Queued JSON With Laravel
+description: OMG, not another guide on setting up Xdebug on Homestead and then getting it to work properly with PhpStorm! Sorry.
 ---
 
 _OMG, not another guide on setting up Xdebug on Homestead and then getting it to work properly with PhpStorm! Sorry._
