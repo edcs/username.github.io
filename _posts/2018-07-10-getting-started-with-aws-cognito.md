@@ -1,7 +1,7 @@
 ---
 title: "Getting Started With AWS Cognito"
 layout: post
-date: 2018-07-10 15:45
+date: 2018-07-10 18:49
 tag:
 - aws
 - cognito
