@@ -1,13 +1,11 @@
-- - - -
+---
 title: "Getting Started With AWS Cognito"
 layout: post
-date: 2018-07-10 19:45
+date: 2018-07-10 15:45
 tag:
 - aws
 - cognito
 - idaas
-- react
-- react-native
 - auth0
 - okta
 - serverless
@@ -15,7 +13,7 @@ tag:
 blog: true
 author: edcs
 description: A tale of my first AWS Cognito experience.
-- - - -
+---
 
 So you’ve decided that you want to use an ‘ID as a Service’ provider to secure your mobile or web app and 
 corresponding APIs and services. You’ve looked at services like [Auth0](https://auth0.com/) and 
@@ -46,7 +44,7 @@ Imagine trying to build all that yourself!
 You may have already signed up to AWS and taken a look at the Cognito console. This was my first ‘what the…’ moment, 
 you’re asked whether you want to create a ‘User Pool’ or an ‘Identity Pool’; but what does this even mean?
 
-**
+[![Cognito Interface](/assets/img/getting-started-with-aws-cognito/cognito.png)](/assets/img/getting-started-with-aws-cognito/cognito.png)
 
 ### User Pools and Identity Pools
 
@@ -107,5 +105,5 @@ Pools’ give temporary credentials to users that have been authenticated agains
 Pool’. You may find that AWS Amplify is helpful for this type of application.
 
 _I hope you found this article useful. If you have any issues with it, feel free to 
-[report](https://github.com/edcs/edcs.github.io/issues) them or [fix](https://github.com/edcs/edcs.github.io/pulls) them :+1:_
+[report](https://github.com/edcs/edcs.github.io/issues) them or [fix](https://github.com/edcs/edcs.github.io/pulls) them 👍_
 
