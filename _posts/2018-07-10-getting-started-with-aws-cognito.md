@@ -46,7 +46,7 @@ Imagine trying to build all that yourself!
 You may have already signed up to AWS and taken a look at the Cognito console. This was my first ‘what the…’ moment, 
 you’re asked whether you want to create a ‘User Pool’ or an ‘Identity Pool’; but what does this even mean?
 
-![](&&&SFLOCALFILEPATH&&&Screen%20Shot%202018-07-10%20at%2014.11.11.png)
+**
 
 ### User Pools and Identity Pools
 
